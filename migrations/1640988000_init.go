@@ -78,6 +78,7 @@ func init() {
 				[[recordId]]     TEXT NOT NULL,
 				[[provider]]     TEXT NOT NULL,
 				[[providerId]]   TEXT NOT NULL,
+				[[providerUsername]] TEXT DEFAULT "" NOT NULL,
 				[[created]]      TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%fZ')) NOT NULL,
 				[[updated]]      TEXT DEFAULT (strftime('%Y-%m-%d %H:%M:%fZ')) NOT NULL,
 				---

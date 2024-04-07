@@ -274,6 +274,7 @@ func (form *RecordOAuth2Login) submit(data *RecordOAuth2LoginData) error {
 				RecordId:     data.Record.Id,
 				Provider:     form.Provider,
 				ProviderId:   data.OAuth2User.Id,
+				ProviderUsername: data.OAuth2User.Username,
 			}
 			if err := txDao.SaveExternalAuth(data.ExternalAuth); err != nil {
 				return err
